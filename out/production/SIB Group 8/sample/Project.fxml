@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="thepane" prefHeight="430" prefWidth="750" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Project">
+   <children>
+      <ImageView fitHeight="478.0" fitWidth="750" layoutX="0.0" layoutY="0.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../res/Project%20Page/BlackBG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="102.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="450.0" fitWidth="720.0" layoutX="17.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../res/Project%20Page/GreyBG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="239.0" layoutX="260.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Select%20Project%20Text.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="586.0" layoutX="86.0" layoutY="99.0" pickOnBounds="true">
+         <image>
+            <Image url="@../res/Project%20Page/Selection%20Pane.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clockinbut" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="362.0" onMouseClicked="#clockIn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Clock%20In%20Button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="467.0" layoutY="361.0" onMouseClicked="#clockOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Clock%20Out%20Button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="17.0" layoutX="107.0" layoutY="141.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../res/Project%20Page/Definition%20State%20Icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="90.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Delivery%20State%20Icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="105.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Start%20Up%20State%20Icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="102.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/Project%20Page/Warranty%20State%20Icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="732.0" layoutY="3.0" onMouseClicked="#closeProject" prefHeight="23.0" prefWidth="13.0" text="X" textAlignment="CENTER" textFill="#9f9f9f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="449.0" text="Help?" textFill="#9f9f9f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="110.0" text="Service Development 2" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="111.0" text="2016-04-08 - NULL" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="146.0" text="Testing Project" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="146.0" text="2016-12-12 - NULL" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="181.0" text="Service Development 1" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="182.0" text="2016-04-25 - NULL" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="216.0" text="Service Testing 1" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="216.0" text="2016-04-29 - NULL" textFill="#544d4d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="selected2" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="90.0" layoutY="139.0" onMouseClicked="#selected2click" opacity="0.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="579.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.23076923076923078">
+               <stops>
+                  <Stop color="#6c6c6c" />
+                  <Stop color="#1e1c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="selected3" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="90.0" layoutY="174.0" onMouseClicked="#selected3click" opacity="0.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="579.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.23076923076923078">
+               <stops>
+                  <Stop color="#6c6c6c" />
+                  <Stop color="#1e1c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="selected1" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="89.0" layoutY="104.0" onMouseClicked="#selected1click" opacity="0.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="579.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.23076923076923078">
+               <stops>
+                  <Stop color="#6c6c6c" />
+                  <Stop color="#1e1c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="selected4" arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="89.0" layoutY="210.0" onMouseClicked="#selected4click" opacity="0.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="579.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.23076923076923078">
+               <stops>
+                  <Stop color="#6c6c6c" />
+                  <Stop color="#1e1c1c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="717.0" layoutY="1.0" mnemonicParsing="false" onAction="#closeProject" opacity="0.0" prefHeight="27.0" prefWidth="25.0" text="Button" />
+   </children>
+</AnchorPane>
